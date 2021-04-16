@@ -21,7 +21,7 @@ gcloud container clusters create nucleus-backend \
           
           
 gcloud container clusters get-credentials nucleus-backend \
-          --region us-east1
+          --zone us-east1-b
 
 kubectl create deployment hello-server \
           --image=gcr.io/google-samples/hello-app:2.0
